@@ -61,7 +61,7 @@ num_nodes = sum([len(graph.g) for graph in graphs])
 hparams_batch_size = int(num_nodes/len(graphs)) + 1
 print(num_nodes, hparams_batch_size)
 
-def preprocess_neighbors_pool(batch_graph):
+def get_Adj_matrix(batch_graph):
     edge_mat_list = []
     start_idx = [0]
     for i, graph in enumerate(batch_graph):
@@ -78,7 +78,7 @@ def preprocess_neighbors_pool(batch_graph):
 
     return Adj_block_idx_row, Adj_block_idx_cl
 
-def preprocess_graphpool(batch_graph):
+def get_graphpool(batch_graph):
     start_idx = [0]
     # compute the padded neighbor list
     for i, graph in enumerate(batch_graph):
@@ -101,10 +101,10 @@ def preprocess_graphpool(batch_graph):
 
 def get_batch_data(batch_graph):
     X_concat = np.concatenate([graph.node_features for graph in batch_graph], 0)
-    graph_pool = preprocess_graphpool(batch_graph)
+    graph_pool = get_graphpool(batch_graph)
     graph_pool = sparse_to_tuple(graph_pool)
 
-    Adj_block_idx_row, Adj_block_idx_cl = preprocess_neighbors_pool(batch_graph)
+    Adj_block_idx_row, Adj_block_idx_cl = get_Adj_matrix(batch_graph)
     dict_Adj_block = {}
     for i in range(len(Adj_block_idx_row)):
         if Adj_block_idx_row[i] not in dict_Adj_block:
