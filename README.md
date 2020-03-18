@@ -56,9 +56,9 @@ Regarding our supervised U2GNN:
 
 **Notes:**
 
-See command examples in `command_examples.txt`.
+I fixed the number of stacked layers to 1 (i.e., k_num_GNN_layers=1) to show in our paper that our U2GNN aggregation function is a more advanced computation process. You should tune this hyper-parameter to have better results.
 
-Only use `train_U2GNN_Unsup_large_dataset.py` and `eval_large_dataset.py` for a large collection of graphs such as REDDIT if having OOM or problems with Tensorflow when running `train_U2GNN_Unsup.py`. See `reddit_commands.txt`. 
+You can see command examples in `command_examples.txt`. You should only use `train_U2GNN_Unsup_large_dataset.py` and `eval_large_dataset.py` for a large collection of graphs such as REDDIT if having OOM or problems with Tensorflow when running `train_U2GNN_Unsup.py`.
 
 ## Cite  
 Please cite the paper whenever U2GNN is used to produce published results or incorporated into other software:

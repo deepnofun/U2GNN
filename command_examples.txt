@@ -29,3 +29,28 @@ U2GNN$ python train_U2GNN_Sup.py --dataset IMDBBINARY --batch_size 4 --ff_hidden
 U2GNN$ python train_U2GNN_Sup.py --dataset IMDBBINARY --batch_size 4 --ff_hidden_size 1024 --fold_idx 7 --num_neighbors 16 --num_sampled 512 --num_epochs 50 --num_hidden_layers 3 --learning_rate 0.0005 --model_name IMDBBINARY_bs4_fold7_dro05_1024_16_idx0_3_1
 U2GNN$ python train_U2GNN_Sup.py --dataset IMDBBINARY --batch_size 4 --ff_hidden_size 1024 --fold_idx 8 --num_neighbors 16 --num_sampled 512 --num_epochs 50 --num_hidden_layers 2 --learning_rate 0.0005 --model_name IMDBBINARY_bs4_fold8_dro05_1024_16_idx0_2_1
 U2GNN$ python train_U2GNN_Sup.py --dataset IMDBBINARY --batch_size 4 --ff_hidden_size 1024 --fold_idx 9 --num_neighbors 16 --num_sampled 512 --num_epochs 50 --num_hidden_layers 3 --learning_rate 0.0005 --model_name IMDBBINARY_bs4_fold9_dro05_1024_16_idx0_3_1
+
+
+
+
+
+python train_U2GNN_Unsup_large_dataset.py --dataset REDDITMULTI5K --batch_size 1024 --split_idx 9 --ff_hidden_size 1024 --num_neighbors 8 --num_sampled 512 --num_epochs 50 --num_hidden_layers 5 --learning_rate 0.00005 --model_name REDDITMULTI5K_split9_bs1024_dro05_1024_8_idx0_5_3
+
+python train_U2GNN_Unsup_large_dataset.py --dataset REDDITMULTI5K --batch_size 1024 --split_idx 8 --ff_hidden_size 1024 --num_neighbors 8 --num_sampled 512 --num_epochs 50 --num_hidden_layers 5 --learning_rate 0.00005 --model_name REDDITMULTI5K_split8_bs1024_dro05_1024_8_idx0_5_3
+
+python train_U2GNN_Unsup_large_dataset.py --dataset REDDITMULTI5K --batch_size 1024 --split_idx 7 --ff_hidden_size 1024 --num_neighbors 8 --num_sampled 512 --num_epochs 50 --num_hidden_layers 5 --learning_rate 0.00005 --model_name REDDITMULTI5K_split7_bs1024_dro05_1024_8_idx0_5_3
+
+python train_U2GNN_Unsup_large_dataset.py --dataset REDDITMULTI5K --batch_size 1024 --split_idx 6 --ff_hidden_size 1024 --num_neighbors 8 --num_sampled 512 --num_epochs 50 --num_hidden_layers 5 --learning_rate 0.00005 --model_name REDDITMULTI5K_split6_bs1024_dro05_1024_8_idx0_5_3
+
+python train_U2GNN_Unsup_large_dataset.py --dataset REDDITMULTI5K --batch_size 1024 --split_idx 5 --ff_hidden_size 1024 --num_neighbors 8 --num_sampled 512 --num_epochs 50 --num_hidden_layers 5 --learning_rate 0.00005 --model_name REDDITMULTI5K_split5_bs1024_dro05_1024_8_idx0_5_3
+
+python train_U2GNN_Unsup_large_dataset.py --dataset REDDITMULTI5K --batch_size 1024 --split_idx 4 --ff_hidden_size 1024 --num_neighbors 8 --num_sampled 512 --num_epochs 50 --num_hidden_layers 5 --learning_rate 0.00005 --model_name REDDITMULTI5K_split4_bs1024_dro05_1024_8_idx0_5_3
+
+python train_U2GNN_Unsup_large_dataset.py --dataset REDDITMULTI5K --batch_size 1024 --split_idx 3 --ff_hidden_size 1024 --num_neighbors 8 --num_sampled 512 --num_epochs 50 --num_hidden_layers 5 --learning_rate 0.00005 --model_name REDDITMULTI5K_split3_bs1024_dro05_1024_8_idx0_5_3
+
+python train_U2GNN_Unsup_large_dataset.py --dataset REDDITMULTI5K --batch_size 1024 --split_idx 2 --ff_hidden_size 1024 --num_neighbors 8 --num_sampled 512 --num_epochs 50 --num_hidden_layers 5 --learning_rate 0.00005 --model_name REDDITMULTI5K_split2_bs1024_dro05_1024_8_idx0_5_3
+
+python train_U2GNN_Unsup_large_dataset.py --dataset REDDITMULTI5K --batch_size 1024 --split_idx 1 --ff_hidden_size 1024 --num_neighbors 8 --num_sampled 512 --num_epochs 50 --num_hidden_layers 5 --learning_rate 0.00005 --model_name REDDITMULTI5K_split1_bs1024_dro05_1024_8_idx0_5_3
+	
+python train_U2GNN_Unsup_large_dataset.py --dataset REDDITMULTI5K --batch_size 1024 --split_idx 0 --ff_hidden_size 1024 --num_neighbors 8 --num_sampled 512 --num_epochs 50 --num_hidden_layers 5 --learning_rate 0.00005 --model_name REDDITMULTI5K_split0_bs1024_dro05_1024_8_idx0_5_3
+
