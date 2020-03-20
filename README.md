@@ -40,20 +40,6 @@ Regarding our supervised U2GNN:
 	
 	U2GNN$ python train_U2GNN_Sup.py --dataset PTC --batch_size 4 --ff_hidden_size 1024 --fold_idx 1 --num_neighbors 16 --num_sampled 512 --num_epochs 50 --num_hidden_layers 3 --learning_rate 0.0005 --model_name PTC_bs4_fold1_dro05_1024_16_idx0_3_1
 
-**Parameters:** 
-
-`--learning_rate`: The initial learning rate for the Adam optimizer.
-
-`--batch_size`: The batch size.
-
-`--dataset`: Name of dataset.
-
-`--num_epochs`: The number of training epochs.
-
-`--num_hidden_layers`: The number T of timesteps.
-
-`--fold_idx`: The index of fold in 10-fold validation.
-
 **Notes:**
 
 I fixed the number of stacked layers to 1 (i.e., k_num_GNN_layers=1) to show in our paper that our U2GNN aggregation function is a more advanced computation process. You should tune this hyper-parameter to have better results.
