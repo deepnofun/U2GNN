@@ -12,7 +12,7 @@
 <img alt="GitHub" src="https://img.shields.io/github/license/daiquocnguyen/U2GNN">
 
 This program provides the implementation of our U2GNN as described in our paper: [Universal Self-Attention Network for Graph Classification](https://arxiv.org/pdf/1909.11855.pdf) where we leverage on the transformer self-attention network. 
-In general, both our supervised and unsupervised U2GNN models produce new state-of-the-art accuracies in most of the benchmark cases. More importantly, to the best of our knowledge, our work is the first consideration of using the unsupervised training setting to train a GNN-based model for the graph classification task. We show that a unsupervised model can noticeably outperform up-to-date supervised models by a large margin. Therefore, we suggest that future GNN works should pay more attention to the unsupervised training setting.
+In general, both our supervised and unsupervised U2GNN models produce new state-of-the-art accuracies in most of the benchmark cases. More importantly, to the best of our knowledge, our work is the first consideration of using the unsupervised training setting to train a GNN-based model for the graph classification task. We show that an unsupervised model can noticeably outperform up-to-date supervised models by a large margin. Therefore, we suggest that future GNN works should pay more attention to the unsupervised training setting.
 
 <p align="center">
 	<img src="https://github.com/daiquocnguyen/U2GNN/blob/master/U2GNN.png">
